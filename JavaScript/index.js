@@ -66,13 +66,6 @@ else
 
 peso_fnal = parseInt(peso_fnal);
 
-swal({
-  title: `Tu peso en ${planetita}`,
-  text: `Seria de ${peso_fnal} Kgs`,
-  icon: "success",
-});
-
-
 const buttons = document.querySelectorAll('.button');
 buttons.forEach((button) => {
   let target = button.querySelector('.target');
@@ -92,6 +85,11 @@ buttons.forEach((button) => {
 });
 
 if (peso_fnal) {
+  swal({
+    title: `Tu peso en ${planetita}`,
+    text: `Seria de ${peso_fnal} Kgs`,
+    icon: "success",
+  });
   document.write("<h1 class='display-6 animate__fadeIn'> Tu peso en "+ planetita + "  es  de " + peso_fnal + " kilos.</h1>");
 } else {
     document.write("<h1 class='display-6 animate__fadeIn'>Completa la información.</h1>");
