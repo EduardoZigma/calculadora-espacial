@@ -89,7 +89,7 @@ buttons.forEach((button) => {
 if (peso_fnal) {
   swal({
     title: `Tu peso en ${planetita}`,
-    text: `Seria de ${peso_fnal} Kgs`,
+    text: `Sería de ${peso_fnal} Kgs`,
     icon: "success",
   });
   document.write("<h1 class='display-6 animate__fadeIn'> Tu peso en "+ planetita + "  es  de " + peso_fnal + " kilos.</h1>");
